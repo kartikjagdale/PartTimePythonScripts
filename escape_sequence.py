@@ -11,6 +11,15 @@
 # render your escaped text as the corresponding symbols, 
 # but the grading script will still correctly evaluate it.
 # 
+import cgi
+
+#Anotehr way to do it
+def escape_html_ver2(s):
+    return cgi.escape(s, quote=True)
+
+
+
+#simplr approach
 def escape_html(s):
     srr = ""
     i = 0
@@ -30,3 +39,4 @@ def escape_html(s):
     
 
 print escape_html("<b>html!</b>")
+print escape_html_ver2("<b>html!</b>")

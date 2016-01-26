@@ -8,7 +8,11 @@ def session_start(event):
     print 'session started'
 
 jid = 'kartikjagdale@chat.facebook.com'
+<<<<<<< HEAD
 password = '@nn3.Fr@nk'
+=======
+password = 'yourpassword'
+>>>>>>> 59211825f79ddf0782e9fdeaa793240768697909
 server = ('chat.facebook.com',5222)
 
 chat = sleekxmpp.ClientXMPP(jid,password)
